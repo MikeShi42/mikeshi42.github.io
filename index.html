@@ -1,16 +1,100 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>No.</div>
-    </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <ul>
+    <li class="blue-text" onclick="scrollToElement(sectionElements.landing);">
+      home
+    </li>
+    <li onclick="scrollToElement(sectionElements.projects);">
+      projects
+    </li>
+    <li>
+      contact
+    </li>
+    <li>
+      blog
+    </li>
+  </ul>
+</nav>
+
+<section class="landing container-fluid">
+  <div class="main-content">
+    <h1 class="intro-text">
+      Hello. I'm <span class="blue-text">Michael</span>.
+    </h1>
+  </div>
+  <i class="fa fa-chevron-down" onclick="scrollToElement(sectionElements.projects);"></i>
+</section>
+
+<section class="projects container-fluid">
+
+  <div class="frac-bg">
+    <div class="pi p1 d1">    
+    </div>
+    <div class="pi p2 d1">
+      <div class="sub s1 d1">
+      </div>      
+      <div class="sub s2 d1">
+      </div>      
+      <div class="sub s3 i1">
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="col-xs-3 col-lg-2 col-lg-offset-2">
+      <div class="project-card">
+        <div class="image">
+        </div>
+        <div class="description">
+          Pandora Extensions
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3 col-lg-2">
+      <div class="project-card">
+        <div class="image">
+        </div>
+        <div class="description">
+          Pandora Extensions
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3 col-lg-2">
+      <div class="project-card">
+        <div class="image">
+        </div>
+        <div class="description">
+          Pandora Extensions
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3 col-lg-2">
+      <div class="project-card">
+        <div class="image">
+        </div>
+        <div class="description">
+          Pandora Extensions
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<script src="libs.js"></script>
+<script src="index.js"></script>
+
+</body>
 </html>
