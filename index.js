@@ -1,6 +1,6 @@
 //Handles scroll events, fired after short delay after last scroll event
 function scrollHandler(){
-  if(scrollTop() > 75){
+  if(scrollTop() > 250){
     sectionElements.nav.classList.add('default');
   }
   else{
