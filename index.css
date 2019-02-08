@@ -1,7 +1,8 @@
 body {
   font-family: sans-serif;
   max-width: 550px;
-  margin: 25px auto;
+  margin: 0 auto;
+  padding: 25px;
 }
 
 .links-list {
