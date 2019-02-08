@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+  max-width: 550px;
+  margin: 25px auto;
+}
+
+.links-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.links-list li {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
