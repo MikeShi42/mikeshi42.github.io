@@ -1,0 +1,500 @@
+<html>
+
+<head>
+  <meta name="viewport" content="initial-scale=1" />
+  <title>Mike Shi - Resume</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+
+  <style>
+    #resume {
+      height: 10.5in;
+      padding: .25in .5in;
+      width: 7.5in;
+    }
+
+    #resume.decorator {
+      -webkit-box-shadow: 2px 2px 25px -5px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 2px 2px 25px -5px rgba(0, 0, 0, 0.5);
+      box-shadow: 2px 2px 25px -5px rgba(0, 0, 0, 0.5);
+      margin: 3rem auto;
+    }
+
+    html {
+      font-size: 14px;
+    }
+
+    body {
+      color: #333;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 4.5rem;
+      font-weight: 100;
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 100;
+    }
+
+    .d-flex {
+      display: flex;
+    }
+
+    .justify-content-between {
+      justify-content: space-between;
+    }
+
+    .float-left {
+      float: left;
+    }
+
+    .float-right {
+      float: right;
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .text-align-right {
+      text-align: right;
+    }
+
+    .thin-font {
+      font-weight: 100;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .name {
+      color: #048CEF;
+      font-family: 'Lato', sans-serif;
+      text-align: right;
+      margin-bottom: -15px;
+    }
+
+    .contact {
+      margin-top: 12px;
+      line-height: 1.7rem;
+      font-weight: 300;
+    }
+
+    .header {
+      position: relative;
+    }
+
+    .header .bottom {
+      position: absolute;
+      bottom: 0;
+    }
+
+    .main-content {
+      font-size: 1.2em;
+      font-weight: 100;
+      margin-top: 25px;
+    }
+
+    .left-column {
+      margin-right: 3%;
+      text-align: left;
+      width: 70%;
+    }
+
+    .right-column {
+      width: 27%;
+      font-size: .87rem;
+    }
+
+    .section-header {
+      color: #048CEF;
+      font-size: 1.6em;
+      margin-bottom: .5em;
+    }
+
+    .exp-item {
+      margin: 0 0 .95rem .0rem;
+    }
+
+    .exp-item .title {
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+
+    .exp-item .summary {
+      color: grey;
+      font-size: 1.15rem;
+      font-size: 1rem;
+      font-weight: 300;
+      margin-top: .5rem;
+      margin: .5rem 0 0 0rem;
+    }
+
+    .exp-item .time {
+      color: grey;
+      font-size: 1.15rem;
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: 100;
+      font-weight: 300;
+      margin-top: .5rem;
+      margin: .5rem 0 0 .2rem;
+    }
+
+    .exp-item .desc {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1rem;
+      margin: .7rem 0 0 .75rem;
+      text-align: justify;
+    }
+
+    .exp-item .desc .list-item {
+      font-weight: 300;
+      line-height: 1.4em;
+      margin-bottom: .3em;
+    }
+
+    .exp-item .desc .list-item:before {
+      content: "\25B8";
+      font-size: .8em;
+      margin-right: 8px;
+      position: relative;
+      top: -.15em;
+    }
+
+    #community,
+    #projects {
+      margin-top: 2rem;
+    }
+
+    .education-section {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      font-weight: 300;
+    }
+
+    .skill-section {
+      margin-left: .3em;
+    }
+
+    .skill-section .title {
+      font-size: 1.45em;
+      font-weight: 300;
+      margin-bottom: .6em;
+      margin-top: .5em;
+    }
+
+    .skill-section .item {
+      font-size: 1.2em;
+      margin-bottom: .4em;
+      margin-left: 1em;
+      font-weight: 300;
+    }
+
+    .awards-section .item {
+      font-size: 1.04em;
+      font-weight: 300;
+      margin: .7em 0 .7em .4em;
+    }
+
+    .community-section {
+      font-size: 1.1em;
+    }
+
+    .community-section .item {
+      margin-bottom: .6rem;
+    }
+
+    .community-section .item .title {
+      font-weight: 300;
+      margin-bottom: .4em;
+      line-height: 1.4rem;
+      font-size: 1.05rem;
+    }
+
+    .community-section .item .content {
+      margin-left: 1em;
+      line-height: 1.1rem;
+      font-weight: 300;
+    }
+
+    #nav {
+      margin: 35px auto 15px;
+      width: 8.5in;
+    }
+    #nav-btn {
+      padding: 15px;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+    #nav-btn a {
+      text-decoration: none;
+      color: #048CEF;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nav">
+    <div id="nav-btn">
+      <a href="/">
+        ← Go Back to Home
+      </a>
+    </div>
+    <h1 style="font-size: 3rem;">Resume</h1>
+  </div>
+  <div id="resume" class="decorator">
+    <div class="header clearfix">
+      <div class="float-right contact">
+        hi@michaelshi.me
+      </div>
+      <div class="float-left">
+        <h1 class="name">
+          michael shi
+        </h1>
+      </div>
+    </div>
+    <div class="main-content" id="page">
+      <div class="float-left left-column" id="left-column">
+        <h2 class="section-header">
+          Experience
+        </h2>
+        <div class="exp-item">
+          <div class="d-flex justify-content-between">
+            <div class="title">
+              Sympto Health - Product Manager
+            </div>
+            <div class="time">
+              Mar 2019 - Sept 2019
+            </div>
+          </div>
+          <div class="summary">
+            A Kleiner Perkins backed startup solving cancer patient ⇄ nurse communication.
+          </div>
+          <div class="desc">
+            <div class="list-item">Established user-centric design thinking and a customer discovery focus to bring
+              novel product insights from nurses, doctors, and execs.
+            </div>
+            <div class="list-item">Ran usability tests on dozens of geriatric users to uncover product flaws that lead
+              to 30% faster survey completion times.
+            </div>
+            <div class="list-item">Lead weekly syncs across 5 person team to communicate priorities and assess progress.
+            </div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="d-flex justify-content-between">
+            <div class="title">
+              ModelDepot - Co-Founder and CEO
+            </div>
+            <div class="time">
+              Jan 2018 - Mar 2019
+            </div>
+          </div>
+          <div class="summary">
+            Democratizing machine learning via an ML model sharing & discovery platform.
+          </div>
+          <div class="desc">
+            <div class="list-item">Developed & Launched DeepSearch, with 14k+ Searches/Mo, 60k Indexed ML assets.
+            </div>
+            <div class="list-item">Co-Developed & Launched ML Model Repository with 700 model downloads/mo, 9k MAU, #1
+              on Hacker News.
+            </div>
+            <div class="list-item">Conducted hundreds of user conversations to further iterate on product to increase
+              retention.
+            </div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="d-flex justify-content-between">
+            <div class="title">
+              Microsoft - Program Manager Intern
+            </div>
+            <div class="time">
+              Summer 2017
+            </div>
+          </div>
+          <div class="desc">
+            <div class="list-item">Set product direction for data discovery in Azure Data Catalog.
+            </div>
+            <div class="list-item">Validated and prioritized product features with stakeholders via user interviews and
+              iterative wireframing.
+            </div>
+            <div class="list-item">Lead 5 person product development to increase patron serving throughput via a mobile
+              check-in system for the Pike Market Food Bank.
+            </div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="d-flex justify-content-between">
+            <div class="title">
+              Yelp - Software Intern
+            </div>
+            <div class="time">
+              Summer 2016
+            </div>
+          </div>
+          <div class="desc">
+            <div class="list-item">Lead product roadmap and scoped tasks for 3 FT engineers for an internal image
+              repository.
+            </div>
+            <div class="list-item">Created analysis for A/B tests for ad designs to explain metrics and recommended
+              decisions based on its impact on KPIs.
+            </div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="d-flex justify-content-between">
+            <div class="title">
+              Facebook - Software Intern
+            </div>
+            <div class="time">
+              Summer 2015
+            </div>
+          </div>
+          <div class="desc">
+            <div class="list-item">Worked on the Ads Interfaces team on the new Ads Manager roll-out.
+            </div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="d-flex justify-content-between">
+            <div class="title">
+              ScorePortal - Co-Founder and CEO
+            </div>
+            <div class="time">
+              Dec 2012 - Jun 2015
+            </div>
+          </div>
+          <div class="desc">
+            <div class="list-item">Founded a student-centric platform for grade visualization and collaboration used by
+              60% of the school.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="float-left right-column" id="right-column">
+        <h2 class="section-header" style="font-size: 1.8em; margin-top: 0.24em;">
+          Education
+        </h2>
+        <div class="education-section">
+          B.S. Computer Science, 2018 <br />
+          GPA - 3.9 <br />
+          University of California - San Diego
+        </div>
+        <h2 class="section-header" style="font-size: 1.8em; margin-top: 0.24em;">
+          Skills
+        </h2>
+        <div class="skill-section">
+          <div class="title">
+            Proficient
+          </div>
+          <div class="item">
+            Javascript / Node.js
+          </div>
+          <div class="item">
+            Python
+          </div>
+          <div class="item">
+            SQL
+          </div>
+          <div class="item">
+            React + React Native
+          </div>
+          <div class="item">
+            HTML + CSS / SCSS
+          </div>
+          <div class="item">
+            Chrome Extensions
+          </div>
+          <div class="item">
+            MongoDB
+          </div>
+        </div>
+        <div class="skill-section">
+          <div class="title">
+            Prior Experience
+          </div>
+          <div class="item">
+            PHP / Hack
+          </div>
+        </div>
+        <div class="skill-section">
+          <div class="title">
+            Tools
+          </div>
+          <div class="item">
+            GA / Tableau / Metabase
+          </div>
+          <div class="item">
+            Sketch / Figma / Balsamiq
+          </div>
+        </div>
+        <h2 id="projects" class="section-header">
+          Projects
+        </h2>
+        <div class="community-section">
+          <div class="item">
+            <div class="title">
+              MessengerMerge
+            </div>
+            <div class="content">
+              27k Messages/Month, 10k+ Installs
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">
+              Shortlink
+            </div>
+            <div class="content">
+              24 Paying Users, Featured on Product Hunt
+            </div>
+          </div> <!-- End Item -->
+        </div>
+        <h2 id="community" class="section-header">
+          Community
+        </h2>
+        <div class="community-section">
+          <div class="item">
+            <div class="title">
+              Triton Engineering Student Council
+            </div>
+            <div class="content">
+              Vice President
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">
+              Computer Science and Engineering Society
+            </div>
+            <div class="content">
+              Professional Dev Chair
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">
+              SD Hacks 2015
+            </div>
+            <div class="content">
+              Founding Organizer
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
